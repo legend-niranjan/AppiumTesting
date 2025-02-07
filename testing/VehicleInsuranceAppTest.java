@@ -34,9 +34,9 @@ public class VehicleInsuranceAppTest {
 			WebElement sinupText = driver.findElement(By.id("sinupText"));
 			sinupText.click();
 			
-			WebElement registerTitle = driver.findElement(By.xpath("//android.widget.TextView[@text='Register']"));
+			WebElement registerTitle = driver.findElement(By.xpath("//android.widget.EditText[@hint='Full Name']"));
 			
-			if(registerTitle.getText().equals("Register")) {
+			if(registerTitle.getText().equals("Full Name")) {
 				System.out.println("Successfully navigated to Register Page");
 			}
 			
